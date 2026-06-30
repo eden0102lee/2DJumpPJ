@@ -13,8 +13,8 @@ Unity 6 2D platformer movement prototype inspired by Hollow Knight: Silksong.
 
 | Scene | Description |
 |-------|-------------|
-| `MovementTest.unity` | Flat horizontal test — run, dash, wall jump |
-| `VerticalCavernTest.unity` | Vertical shaft inspired by HK cavern maps — climb up through staggered platforms |
+| `MovementTest.unity` | Flat horizontal test — run, sprint, dash, wall jump, down-dash |
+| `VerticalCavernTest.unity` | Vertical shaft inspired by HK cavern maps — climb, wall jump combos |
 
 Generate scenes via **Hollow** menu if they are missing.
 
@@ -24,21 +24,48 @@ Generate scenes via **Hollow** menu if they are missing.
 |--------|----------|---------|
 | Move | WASD / Arrows | Left Stick |
 | Jump | Space | A / South |
-| Dash | Left Shift | RT |
+| Dash (tap) | C / Left Shift | RT (tap) |
+| Sprint (hold) | Hold C / Shift | Hold RT |
+
+### Movement Techniques
+
+| Technique | Input |
+|-----------|-------|
+| **Dash** | Tap Sprint while grounded or airborne |
+| **Sprint** | Hold Sprint while moving on ground |
+| **Sprint Jump** | Jump while sprinting (higher and farther) |
+| **Wall Cling** | Hold toward wall while airborne |
+| **Wall Jump** | Jump while clinging to wall |
+| **Wall Climb** | Hold Sprint + toward wall while clinging |
+| **Wall Up-Dash** | Tap Sprint while clinging to wall |
+| **Down Dash** | Hold Down + tap Sprint while airborne |
+| **Wall Jump + Air Dash** | Wall jump, then immediately tap Sprint away from wall |
 
 ## Systems Implemented
 
-- **State machine**: Idle, Run, Jump, Fall, WallSlide, Dash
+- **State machine**: Idle, Run, Sprint, Jump, Fall, WallSlide, WallClimb, Dash, DownDash
+- **Swift Step**: tap-to-dash / hold-to-sprint with sprint jump bonus
+- **Cling Grip**: wall cling delay, slide, wall jump, wall climb, wall up-dash
 - **Coyote time** and **jump buffer**
 - **Variable jump height** (release Jump early to cut velocity)
-- **Wall slide** and **wall jump**
-- **Dash** with cooldown (ground + air)
-- **Camera follow** with horizontal look-ahead (Cinemachine 3 when available)
+- **Dash i-frames** and end-of-dash momentum carry
+- **Down dash** (hold to continue until release)
+- **Bilateral wall detection** (cling by pressing toward wall)
+- **Camera follow** with sprint look-ahead (Cinemachine 3 when available)
 - **ScriptableObject config** at `Assets/ScriptableObjects/DefaultHeroConfig.asset`
 
 ## Tuning
 
-Edit `DefaultHeroConfig` in the Inspector to adjust run speed, jump force, dash distance, gravity, etc.
+Edit `DefaultHeroConfig` in the Inspector. Key feel targets (1 unit ≈ 1 tile):
+
+| Metric | Target | Config fields |
+|--------|--------|---------------|
+| Single jump height | ~2.8–3.2 units | `jumpForce`, `gravityScale`, `lowJumpGravityMultiplier` |
+| Sprint jump height | ~3.5–4 units | `sprintJumpForce`, `sprintJumpHorizontalBoost` |
+| Dash distance | ~3.2–3.8 units | `dashSpeed` × `dashDuration` |
+| Wall jump height | ~2.5 units | `wallJumpForce` |
+| Sprint vs run speed | ~1.6× | `sprintSpeed` / `runSpeed` |
+| Coyote / buffer | 120 ms | `coyoteTime`, `jumpBufferTime` |
 
 ## Free Art Assets
 
@@ -51,7 +78,7 @@ Assets/Scripts/
   Core/GameEvents.cs
   Input/PlayerInputReader.cs
   Player/HeroController.cs, HeroControllerConfig.cs, HeroStateMachine.cs
-  Player/States/   - movement states
+  Player/States/   - movement states (Idle, Run, Sprint, Jump, Fall, WallSlide, WallClimb, Dash, DownDash)
   Player/Sensors/  - GroundWallSensor
   Camera/          - CameraLookAhead, SmoothCameraFollow
   Editor/          - HollowSceneSetup (scene generator)
@@ -62,3 +89,4 @@ Assets/Scripts/
 - Nail combat, HealthManager, enemies
 - Silk resource / heal system
 - Ability unlocks and metroidvania map
+- Double jump (Faydown Cloak), glide (Drifter's Cloak)

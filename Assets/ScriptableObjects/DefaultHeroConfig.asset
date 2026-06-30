@@ -12,23 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc1014a005822346bd11331cdfa0490, type: 3}
   m_Name: DefaultHeroConfig
   m_EditorClassIdentifier: 
-  runSpeed: 8
+  runSpeed: 7.5
   acceleration: 60
   deceleration: 60
   airAcceleration: 40
   airDeceleration: 30
-  jumpForce: 14
+  sprintSpeed: 12
+  sprintAcceleration: 80
+  dashTapThreshold: 0.15
+  jumpForce: 15.5
+  sprintJumpForce: 17
+  sprintJumpHorizontalBoost: 1.3
   jumpCutMultiplier: 0.5
   coyoteTime: 0.12
   jumpBufferTime: 0.12
   maxFallSpeed: 25
   wallSlideSpeed: 2
-  wallJumpForce: {x: 10, y: 14}
-  wallJumpLockTime: 0.2
-  dashSpeed: 20
-  dashDuration: 0.18
-  dashCooldown: 0.5
+  wallJumpForce: {x: 11, y: 15}
+  wallJumpLockTime: 0.15
+  wallClingDelay: 0.08
+  wallClimbSpeed: 5
+  wallUpDashForce: {x: 0, y: 16}
+  dashSpeed: 22
+  dashDuration: 0.16
+  dashCooldown: 0.35
+  dashIFrameDuration: 0.15
+  dashEndMomentum: 0.55
   allowAirDash: 1
+  allowDownDash: 1
+  downDashSpeed: 18
   gravityScale: 3
-  fallGravityMultiplier: 1.5
+  fallGravityMultiplier: 1.8
   lowJumpGravityMultiplier: 2

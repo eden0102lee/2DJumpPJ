@@ -9,8 +9,9 @@ namespace Hollow.Player
         public override void Tick()
         {
             TryJump();
-            TryDash();
+            TryTapDash();
             TryWallSlideTransition();
+
             if (!IsCurrentState<HeroFallState>())
                 return;
 

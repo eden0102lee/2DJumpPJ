@@ -9,7 +9,9 @@ namespace Hollow.Player
         public override void Tick()
         {
             TryJump();
-            TryDash();
+            TryTapDash();
+            TryStartSprint();
+
             if (!IsCurrentState<HeroRunState>())
                 return;
 

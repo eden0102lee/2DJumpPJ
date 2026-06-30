@@ -8,14 +8,23 @@ namespace Hollow.Player
 
         public override void Enter()
         {
-            Hero.PerformJump(Config.jumpForce);
+            if (Hero.CameFromSprint)
+                Hero.PerformSprintJump();
+            else
+                Hero.PerformJump(Config.jumpForce);
+        }
+
+        public override void Exit()
+        {
+            Hero.SetSprinting(false);
         }
 
         public override void Tick()
         {
-            TryDash();
+            TryTapDash();
             Hero.ApplyVariableJumpCut();
             TryWallSlideTransition();
+
             if (!IsCurrentState<HeroJumpState>())
                 return;
 

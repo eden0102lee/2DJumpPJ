@@ -20,6 +20,9 @@ namespace Hollow.Player
 
         public bool CanMove { get; set; } = true;
         public bool CanDash { get; set; } = true;
+        public bool IsInvulnerable { get; private set; }
+        public bool IsSprinting { get; private set; }
+        public bool CameFromSprint { get; private set; }
 
         public int FacingDirection { get; private set; } = 1;
 
@@ -27,6 +30,7 @@ namespace Hollow.Player
         private float _jumpBufferTimer;
         private float _wallJumpLockTimer;
         private float _dashCooldownTimer;
+        private float _iFrameTimer;
         private bool _wasGrounded;
 
         private void Awake()
@@ -43,6 +47,8 @@ namespace Hollow.Player
             Input = GetComponent<PlayerInputReader>();
             HeroAnimator = GetComponent<HeroAnimator>();
 
+            Input.SetDashTapThreshold(config.dashTapThreshold);
+
             Rigidbody.gravityScale = config.gravityScale;
             Rigidbody.freezeRotation = true;
             Rigidbody.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
@@ -51,10 +57,13 @@ namespace Hollow.Player
             StateMachine = new HeroStateMachine();
             StateMachine.RegisterState(new HeroIdleState(this));
             StateMachine.RegisterState(new HeroRunState(this));
+            StateMachine.RegisterState(new HeroSprintState(this));
             StateMachine.RegisterState(new HeroJumpState(this));
             StateMachine.RegisterState(new HeroFallState(this));
             StateMachine.RegisterState(new HeroWallSlideState(this));
+            StateMachine.RegisterState(new HeroWallClimbState(this));
             StateMachine.RegisterState(new HeroDashState(this));
+            StateMachine.RegisterState(new HeroDownDashState(this));
         }
 
         private void Start()
@@ -66,7 +75,6 @@ namespace Hollow.Player
         {
             UpdateFacing();
             UpdateTimers();
-            Sensor.UpdateSensor(FacingDirection);
             StateMachine.Tick();
             HeroAnimator?.UpdateAnimator(this);
         }
@@ -103,6 +111,16 @@ namespace Hollow.Player
 
             if (_dashCooldownTimer > 0f)
                 _dashCooldownTimer -= Time.deltaTime;
+
+            if (_iFrameTimer > 0f)
+            {
+                _iFrameTimer -= Time.deltaTime;
+                IsInvulnerable = _iFrameTimer > 0f;
+            }
+            else
+            {
+                IsInvulnerable = false;
+            }
         }
 
         private void CheckLanding()
@@ -132,13 +150,15 @@ namespace Hollow.Player
             {
                 _jumpBufferTimer = 0f;
                 _coyoteTimer = 0f;
+                CameFromSprint = IsSprinting;
                 StateMachine.ChangeState(typeof(HeroJumpState));
                 return true;
             }
 
-            if (Sensor.IsTouchingWall && !Sensor.IsGrounded)
+            var wallDir = Sensor.GetWallDirectionFromInput(Input.MoveInput.x);
+            if (wallDir != 0 && !Sensor.IsGrounded)
             {
-                PerformWallJump();
+                PerformWallJump(wallDir);
                 _jumpBufferTimer = 0f;
                 StateMachine.ChangeState(typeof(HeroFallState));
                 return true;
@@ -152,9 +172,15 @@ namespace Hollow.Player
             Rigidbody.linearVelocity = new Vector2(Rigidbody.linearVelocity.x, force);
         }
 
-        public void PerformWallJump()
+        public void PerformSprintJump()
         {
-            FacingDirection = -Sensor.WallDirection;
+            var horizontalBoost = FacingDirection * config.runSpeed * config.sprintJumpHorizontalBoost;
+            Rigidbody.linearVelocity = new Vector2(horizontalBoost, config.sprintJumpForce);
+        }
+
+        public void PerformWallJump(int wallDirection)
+        {
+            FacingDirection = -wallDirection;
             _wallJumpLockTimer = config.wallJumpLockTime;
             Rigidbody.linearVelocity = new Vector2(
                 config.wallJumpForce.x * FacingDirection,
@@ -163,11 +189,27 @@ namespace Hollow.Player
 
         public bool ShouldWallSlide()
         {
-            if (Sensor.IsGrounded || !Sensor.IsTouchingWall)
+            if (Sensor.IsGrounded)
                 return false;
 
-            var pressingTowardWall = Mathf.Sign(Input.MoveInput.x) == Sensor.WallDirection;
+            var wallDir = Sensor.GetWallDirectionFromInput(Input.MoveInput.x);
+            if (wallDir == 0)
+                return false;
+
+            var pressingTowardWall = Mathf.Abs(Input.MoveInput.x) > 0.01f;
             return pressingTowardWall || RbIsFalling();
+        }
+
+        public int GetActiveWallDirection()
+        {
+            var wallDir = Sensor.GetWallDirectionFromInput(Input.MoveInput.x);
+            if (wallDir != 0)
+                return wallDir;
+
+            if (Sensor.IsTouchingWall)
+                return Sensor.WallDirection;
+
+            return 0;
         }
 
         private bool RbIsFalling() => Rigidbody.linearVelocity.y < 0f;
@@ -189,6 +231,12 @@ namespace Hollow.Player
             _dashCooldownTimer = config.dashCooldown;
         }
 
+        public void StartIFrames()
+        {
+            _iFrameTimer = config.dashIFrameDuration;
+            IsInvulnerable = true;
+        }
+
         public void ApplyVariableJumpCut()
         {
             if (Input.JumpReleased && Rigidbody.linearVelocity.y > 0f)
@@ -202,6 +250,63 @@ namespace Hollow.Player
         public void SetFacing(int direction)
         {
             FacingDirection = direction;
+        }
+
+        public void SetSprinting(bool sprinting)
+        {
+            IsSprinting = sprinting;
+        }
+
+        public bool ShouldStartSprint()
+        {
+            return Input.DashHoldExceeded
+                && Sensor.IsGrounded
+                && Mathf.Abs(Input.MoveInput.x) > 0.01f;
+        }
+
+        public bool ShouldTryGroundDash()
+        {
+            return Input.DashTap;
+        }
+
+        public bool ShouldTryAirDash()
+        {
+            return Input.DashPressed || Input.DashTap;
+        }
+
+        public bool ShouldTryDownDash()
+        {
+            return config.allowDownDash
+                && !Sensor.IsGrounded
+                && Input.WantsDownDash
+                && (Input.DashPressed || Input.DashTap);
+        }
+
+        public bool ShouldTryWallClimb()
+        {
+            var wallDir = GetActiveWallDirection();
+            if (wallDir == 0)
+                return false;
+
+            return Input.DashHeld
+                && Mathf.Sign(Input.MoveInput.x) == wallDir;
+        }
+
+        public bool ShouldTryWallUpDash()
+        {
+            var wallDir = GetActiveWallDirection();
+            if (wallDir == 0)
+                return false;
+
+            return Input.DashTap;
+        }
+
+        public void PerformWallUpDash()
+        {
+            Rigidbody.linearVelocity = new Vector2(
+                Rigidbody.linearVelocity.x,
+                config.wallUpDashForce.y);
+            StartIFrames();
         }
     }
 }
