@@ -1,0 +1,756 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-u" at "2026-06-30T17:55:16.1905868Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 6376, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.0+aa6cfba
+  Session Id:              2747b144b8b94a7c8675b61305df020b
+  Correlation Id:          6a4ee247b1bd0713f49b3bdce98deb1c
+  External correlation Id: 7033154697385889768
+  Machine Id:              Q1PXfhhIIJrgaGblXL1cOzQqbBE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-u" (connect: 0.00s, validation: 0.01s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-u-notifications" at "2026-06-30T17:55:16.2341508Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '6000.0/staging' branch; Version is '6000.0.39f1 (15ea7ed0b100) revision 1436286'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'zh' Physical Memory: 65277 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-X28H-J2KT-ASXX-SVC6-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-X28H-J2KT-ASXX-SVC6-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:\Work\Hollow\2DJumpPJ
+-executeMethod
+Hollow.Editor.HollowSceneSetup.SetupMovementTestScene
+-logFile
+D:\Work\Hollow\2DJumpPJ\setup3.log
+Successfully changed project path to: D:\Work\Hollow\2DJumpPJ
+D:/Work/Hollow/2DJumpPJ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [54960]  Target information:
+
+Player connection [54960]  * "[IP] 192.168.1.184 [Port] 55504 [Flags] 2 [Guid] 2688302745 [EditorId] 2688302745 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KDT84NM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [54960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [54960] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-42204" after 0.2 seconds.
+Library Redirect Path: Library/
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 68 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.cinemachine@3.1.2 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.cinemachine@b2e7bffab772)
+    com.unity.collab-proxy@2.12.4 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e)
+    com.unity.ide.rider@3.0.31 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.ide.rider@7921be93db40)
+    com.unity.ide.visualstudio@2.0.22 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e)
+    com.unity.inputsystem@1.13.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.inputsystem@ea5ab5b33a26)
+    com.unity.test-framework@1.4.6 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.test-framework@5ac417e07314)
+    com.unity.timeline@1.8.7 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.timeline@c58b4ee65782)
+    com.unity.visualscripting@1.9.5 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.visualscripting@1b53f46e931b)
+    com.unity.ext.nunit@2.0.5 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd)
+    com.unity.2d.animation@10.1.4 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.animation@494a3b4e73a9)
+    com.unity.2d.pixel-perfect@5.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.pixel-perfect@e3ae982b672d)
+    com.unity.2d.psdimporter@9.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.psdimporter@676bae148e11)
+    com.unity.2d.spriteshape@10.0.7 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.spriteshape@9e35352ae135)
+    com.unity.2d.tilemap.extras@4.1.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.tilemap.extras@13634da7dbe0)
+    com.unity.2d.aseprite@1.1.8 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.aseprite@1f731787b516)
+    com.unity.splines@2.7.2 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.splines@d3e1e500c9a0)
+    com.unity.searcher@4.9.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.searcher@1e17ce91558d)
+    com.unity.burst@1.8.19 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.burst@7a907cf5a459)
+    com.unity.mathematics@1.3.2 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.mathematics@8017b507cc74)
+    com.unity.collections@2.5.1 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.collections@56bff8827a7e)
+    com.unity.2d.common@9.0.7 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.common@bb1fc9b3d81b)
+    com.unity.settings-manager@2.0.1 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.settings-manager@56a930affa1e)
+    com.unity.nuget.mono-cecil@1.11.4 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f)
+    com.unity.test-framework.performance@3.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b)
+  Built-in packages:
+    com.unity.feature.2d@2.0.1 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.feature.2d@dd1ea8910f12)
+    com.unity.multiplayer.center@1.0.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546)
+    com.unity.render-pipelines.universal@17.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.render-pipelines.universal@0b68ece7aa54)
+    com.unity.ugui@2.0.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.ugui@03407c6d8751)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility)
+    com.unity.modules.ai@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.render-pipelines.core@38fdc9b96878)
+    com.unity.shadergraph@17.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.shadergraph@afc42d8f5d23)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a)
+    com.unity.2d.sprite@1.0.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.sprite@072d7bd355e5)
+    com.unity.2d.tilemap@1.0.0 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.2d.tilemap@578c7061e96d)
+    com.unity.rendering.light-transport@1.0.1 (location: D:\Work\Hollow\2DJumpPJ\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f)
+Default GameObject Tag: Player already registered
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.08 seconds
+Refreshing native plugins compatible for Editor in 2.78 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.39f1 (15ea7ed0b100)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Work/Hollow/2DJumpPJ/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x220a)
+    Vendor:   NVIDIA
+    VRAM:     12093 MB
+    Driver:   32.0.15.9186
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-X28H-J2KT-ASXX-SVC6-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001959 seconds.
+- Loaded All Assemblies, in  0.294 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.237 seconds
+Domain Reload Profiling: 530ms
+	BeginReloadAssembly (103ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (113ms)
+			TypeCache.Refresh (111ms)
+				TypeCache.ScanAssembly (101ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (238ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (211ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (105ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-X28H-J2KT-ASXX-SVC6-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Application.AssetDatabase Initial Refresh Start
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/Work/Hollow/2DJumpPJ
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s673ms
+[ 808/1047  0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll (+2 others)
+[ 809/1047  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1044/1047  0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 126 defines and 333 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1045/1047  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1046/1047  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (0.64 seconds), 5 items updated, 1047 evaluated
+AssetDatabase: script compilation time: 1.102651s
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.444 seconds
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) (LibraryAssetImporter) -> (artifact id: '716f6c871ff3cf748d6a2c73c9674b2e') in 0.0116538 seconds
+Start importing Packages/com.unity.settings-manager using Guid(d0b08f4c0515292b86176c354d3c2d8a) (DefaultImporter) -> (artifact id: '131f10ba665fea2ff54ac54174b75309') in 0.0007133 seconds
+Start importing Packages/com.unity.cinemachine using Guid(1c16e2fd60d0c9e1e977c5700aecc31c) (DefaultImporter) -> (artifact id: 'b697e61910bcccb13fe922ddf1626705') in 0.0005127 seconds
+Start importing Assets/Art using Guid(4c810a3ac4f7c914dbaeb6d269abad94) (DefaultImporter) -> (artifact id: 'f8b3d4abf63e0851252868faf13dce74') in 0.0079472 seconds
+Start importing Packages/com.unity.splines using Guid(ccea5489e548b4c20c2e35f603cfbc41) (DefaultImporter) -> (artifact id: 'bf279c1d83c1415bf8d1b1d0f44a34f5') in 0.0005754 seconds
+Start importing Assets/ScriptableObjects using Guid(8dcd7dc5936721345905fa7f062ec34c) (DefaultImporter) -> (artifact id: '9af46a49b5450ea59d2f0df8165cf65d') in 0.0072116 seconds
+Start importing Assets/Scripts using Guid(9e6b3499087bda549a919e2f8f0c42f6) (DefaultImporter) -> (artifact id: '3311200fa98982e12127c25d670a2375') in 0.0075977 seconds
+Start importing Packages/com.unity.settings-manager/Editor using Guid(c2910bfb37c064309a7230f4175d6c3a) (DefaultImporter) -> (artifact id: '5d26ed821b7e4b59dc3340d374d51818') in 0.0007171 seconds
+Start importing Assets/Scripts/Input using Guid(f27c7a44c9dc38a4c8c0b9b67fe1df57) (DefaultImporter) -> (artifact id: '859a3a5ebbb27c7ead13991b1c8ce773') in 0.0069744 seconds
+Start importing Packages/com.unity.cinemachine/Editor using Guid(b46f22104d80d4c4e8d58f046ed45054) (DefaultImporter) -> (artifact id: '480812ddf4f24de1ce7021fd347f0b01') in 0.0007369 seconds
+Start importing Assets/Scripts/Camera using Guid(658b583c55413f149969c74746dcc8fc) (DefaultImporter) -> (artifact id: '5c01e85fb60cb546dc7ac214cd447330') in 0.0070634 seconds
+Start importing Assets/Scripts/Editor using Guid(751296a08dad74e4796cfec564ab371d) (DefaultImporter) -> (artifact id: 'b20fedac36456bbc640b73f5b35e6933') in 0.0072403 seconds
+Start importing Packages/com.unity.cinemachine/Runtime using Guid(4948b50a839a1c6419fdd70e2555ba44) (DefaultImporter) -> (artifact id: '5c19ff9d6cdde1086477a051176698f5') in 0.0007018 seconds
+Start importing Packages/com.unity.splines/Runtime using Guid(5a4617047096737409e15d9880263c9c) (DefaultImporter) -> (artifact id: '5a3fa89e1df4c93841de6c90e0c1bcc8') in 0.0005599 seconds
+Start importing Assets/Scripts/Player using Guid(3bef8fd2262bba841a8c06cee812a7d8) (DefaultImporter) -> (artifact id: 'e3dab65ff0bf90cdbc616342d7837164') in 0.007189 seconds
+Start importing Packages/com.unity.splines/Editor using Guid(7be002d6127770a45b33b37bd3ba98ac) (DefaultImporter) -> (artifact id: 'acff231dee1848cfa59e4222f6cae0ac') in 0.0006721 seconds
+Start importing Packages/com.unity.splines/Shader using Guid(2cf15e72bac216b9684886fb42a35910) (DefaultImporter) -> (artifact id: '667be28115234c2bdd5fe96ec69b3d5f') in 0.0005637 seconds
+Start importing Packages/com.unity.cinemachine/Presets using Guid(acfb7c627ec0e8544a0e04b103d45615) (DefaultImporter) -> (artifact id: 'cb6b556fe595d8de1aabc4944bfc9cb0') in 0.0005104 seconds
+Start importing Packages/com.unity.settings-manager/Content using Guid(3d9bd4cbe22e8472781b1cde707d154d) (DefaultImporter) -> (artifact id: '379468ba95ad22a9ad9f99cb2381012e') in 0.0005229 seconds
+Start importing Assets/Art/Sprites using Guid(8d88b2e84ad9104439c8243039782cca) (DefaultImporter) -> (artifact id: '18ab267657082c30ee27293ec05c40a4') in 0.0071309 seconds
+Start importing Assets/Scripts/Core using Guid(edd20cd216b69f1428a213309e1a2403) (DefaultImporter) -> (artifact id: '99370f47672ad7e73743ee8d5441a8db') in 0.0070464 seconds
+Start importing Packages/com.unity.settings-manager/Tests using Guid(8f491bec7bcc4db45ad9590a6158e0fd) (DefaultImporter) -> (artifact id: '246966f29182164d1c49d20076220fa8') in 0.0006627 seconds
+Start importing Packages/com.unity.splines/Editor/Controls using Guid(6042ea3ccf1fb5c45b533a9d67e956b7) (DefaultImporter) -> (artifact id: '4c82c6b4734e8861a8710a7f8e8ed4b7') in 0.0005555 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Samples using Guid(90bdfb5611034e2492142cf83d02f12f) (DefaultImporter) -> (artifact id: '1b8d875bb3bf399184fd5ef9dc4bbd0d') in 0.0004787 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Menus using Guid(d093acf2bada69e4bbbcf0a8b4534919) (DefaultImporter) -> (artifact id: '12c1e7a8aad4e4ab8f8560e848328135') in 0.0004717 seconds
+Start importing Packages/com.unity.splines/Editor/GUI using Guid(f0575e8c5ac74a399a62fcb72fe081c4) (DefaultImporter) -> (artifact id: '379cf386a95968b178c67bb360bc4e78') in 0.0005432 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources using Guid(1112226500c624c40a5a3e75030be2f0) (DefaultImporter) -> (artifact id: 'b306133fc3cdc44d0d93e270bf7d7fa5') in 0.0004964 seconds
+Start importing Packages/com.unity.cinemachine/Editor/PropertyDrawers using Guid(31c3ab7d86d07034eb528155d40c016b) (DefaultImporter) -> (artifact id: 'd069b3ecdadca880bc640add27798e57') in 0.0004657 seconds
+Start importing Packages/com.unity.splines/Editor/Core using Guid(411641953fc0a2148a0507f5ee6df182) (DefaultImporter) -> (artifact id: '86af1adbd9338ba8f0e25b84f9153e8c') in 0.0004595 seconds
+Start importing Packages/com.unity.cinemachine/Editor/SaveDuringPlay using Guid(c1cb3553d4b18664bab73d84a88bdf2a) (DefaultImporter) -> (artifact id: '6b4458a9f6f4315f64e95810ea90940a') in 0.0004558 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Timeline using Guid(0282251d79d6e964089ace2dc6e6e496) (DefaultImporter) -> (artifact id: '6152d5284f4af82689bf72bdf8633158') in 0.0004663 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Helpers using Guid(924d241f19612fa45bd388dc28955fad) (DefaultImporter) -> (artifact id: '2e2176ab0b565b576eb5cf39cfbd3b76') in 0.0004603 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Impulse using Guid(e2408873163918f4da4afc37c51b1586) (DefaultImporter) -> (artifact id: '97eb09ccb51ca9774d633ce50b19a380') in 0.0004541 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/PostProcessing using Guid(73dae0f38fe36064e80bee257b7da7b9) (DefaultImporter) -> (artifact id: '6241457534748e4b6ae923b862629af9') in 0.0004376 seconds
+Start importing Assets/Scripts/Player/States using Guid(d37b24817fcf5574f96c696dadf8a1d7) (DefaultImporter) -> (artifact id: '09d87478aade96a02b2bca9f93a675f6') in 0.0075918 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Input using Guid(2409454fa7d96184c8d17b932bcdc5d5) (DefaultImporter) -> (artifact id: 'b13e2c702720850ce61612d1f4781a77') in 0.000739 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/ThirdParty using Guid(b438b521cf750477d9ad76cbbffe9be3) (DefaultImporter) -> (artifact id: '8ad4f6b877d0860c382e54b0765e977c') in 0.0004986 seconds
+Start importing Packages/com.unity.settings-manager/Tests/Editor using Guid(9563dd1f3643cc54ba60086d957fcd78) (DefaultImporter) -> (artifact id: 'a548f6e3e908a91e7b4c09f14523f23b') in 0.0004599 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Upgrader using Guid(67c7396a4e6a403e8628a7c83ffd74dd) (DefaultImporter) -> (artifact id: '2ee399e5e1974e89134b6d19dfeea50c') in 0.0005084 seconds
+Start importing Packages/com.unity.cinemachine/Editor/SceneView using Guid(486f5db2ff271d04185607a7d9a7a64c) (DefaultImporter) -> (artifact id: '93e9bf4e98f88f50fc13ed30b2393f3d') in 0.0004598 seconds
+Start importing Packages/com.unity.splines/Editor/Components using Guid(e88477d7eedfb4ca8b5d8912575efa76) (DefaultImporter) -> (artifact id: '34f3d832c384404f486aa92f3f310cf4') in 0.0004848 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Utility using Guid(29d58ccb958d24942bf23fafcec87c0b) (DefaultImporter) -> (artifact id: '44cf4ddbfcc5c5884dc5044edac82cf4') in 0.0004438 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Timeline using Guid(59bf6f737ca29494a8a074e4e7151fc3) (DefaultImporter) -> (artifact id: 'be97ca0219d9cb11fdeadfbfaece5b30') in 0.0005313 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Obsolete using Guid(9960e786bad1b67458b4f313c4de75d7) (DefaultImporter) -> (artifact id: '4c03b5509e3b189f8e40b4f621e2cffe') in 0.0005409 seconds
+Start importing Packages/com.unity.splines/Editor/Tools using Guid(a9664a4a45abdb3488bb9916e15748a0) (DefaultImporter) -> (artifact id: '481ebf2f73caf92859329797eb562b0c') in 0.0004786 seconds
+Start importing Packages/com.unity.splines/Editor/Resources using Guid(d96dfe6cb862ab34894ef767abef2e84) (DefaultImporter) -> (artifact id: 'f444fe03fb2906464e05851fe3b9c19c') in 0.0004455 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Editors using Guid(6b46e8ffe448f084ab12938cb774d063) (DefaultImporter) -> (artifact id: 'a947718ebedb360e4e1f23b56e89a242') in 0.0004571 seconds
+Start importing Packages/com.unity.splines/Editor/Utilities using Guid(abbc996d115c3b245a98dfe941766de7) (DefaultImporter) -> (artifact id: '84b427013244f5ed82e4e2448e8d74be') in 0.0004466 seconds
+Start importing Assets/Scripts/Player/Sensors using Guid(4c8a42a164775fe4689fe09ebf0a606c) (DefaultImporter) -> (artifact id: '58231cfc76492ca47abd1f42deacf406') in 0.007161 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets using Guid(8c3dbd03f036dc1428042ff045adbc66) (DefaultImporter) -> (artifact id: '2ea966b94dada1a743a48ff398a11729') in 0.0006447 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Windows using Guid(9c644b247df49ee47957d373411a85c3) (DefaultImporter) -> (artifact id: '060087f26fef1e31ef4a4447787c515a') in 0.000571 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Impulse using Guid(ac4cc060534a50747a448a00776ed888) (DefaultImporter) -> (artifact id: 'f4c0f2830bc6f1176e053534bae2833e') in 0.0004931 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Core using Guid(3d53800f587b60a4191877d7713cd17c) (DefaultImporter) -> (artifact id: '61b048f20d69e60b4614b4a9177643b4') in 0.0004735 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/SaveDuringPlay using Guid(9d3c7f8bbb5843a48aaa0b19964df4bb) (DefaultImporter) -> (artifact id: 'd967489b818a66774691b7671b59b375') in 0.0004409 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Debug using Guid(ad006de08e6604a8bb48bc0e7db399a4) (DefaultImporter) -> (artifact id: '7fadf0f6120f586385b8e2d76b375660') in 0.0004713 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Behaviours using Guid(fd10c4a322c950342a9d03a14ae879b7) (DefaultImporter) -> (artifact id: '33bb77e90b9caf8a75f5a06df794c4ea') in 0.0004959 seconds
+Start importing Packages/com.unity.cinemachine/Editor/PostProcessing using Guid(0e25865eefe5b6f40a615add150c0042) (DefaultImporter) -> (artifact id: 'bd9db3a4851e5ec13d8588cf293c97aa') in 0.0004442 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Components using Guid(0fafdc3d4f989ff48803e7d870539b41) (DefaultImporter) -> (artifact id: '6a37c086484e410ba833b21d02c5a3aa') in 0.0004473 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Deprecated using Guid(4fe26578e79d7c94697707fdcc54e22f) (DefaultImporter) -> (artifact id: 'b8dbc29c92d0c1e394442969ccf52e9d') in 0.0004341 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise using Guid(8f107aadf823af24889bc290a1cca90d) (DefaultImporter) -> (artifact id: 'abb5b612f830d1089f688c72e1a93ae5') in 0.0004551 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/UI using Guid(60ad9e63a7aa54068bc8c58b858532db) (DefaultImporter) -> (artifact id: 'baed80e458471c83a675c6f104207b4e') in 0.0005287 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons using Guid(80c4e990f69fadf42a06e238da57fbfd) (DefaultImporter) -> (artifact id: 'a3f6ae832213f29d5dbee4fb678ae885') in 0.0005068 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Textures using Guid(72fb38b12e406494493310b49ccb8384) (DefaultImporter) -> (artifact id: '70dfef0852646f71bac9c9d822e4b4b2') in 0.0004655 seconds
+Start importing Packages/com.unity.splines/Editor/GUI/ToolbarsOverlays using Guid(e21391b51918435b9e07d2f917a37c79) (DefaultImporter) -> (artifact id: '9f7d71e73b3a654eb9bb13a5538fb0e4') in 0.0004463 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Overlays using Guid(68953765bc132d54396bee18affb91e5) (DefaultImporter) -> (artifact id: '4a0f6593ffcba0783167e9923e82171d') in 0.0004607 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons using Guid(2a47d279b040e40478c5fd28969dd431) (DefaultImporter) -> (artifact id: '136d527f2472ddf874a59bc5b02f9ff8') in 0.0004413 seconds
+Start importing Packages/com.unity.splines/Editor/GUI/Editors using Guid(eaa3cd6309cba3244b2a227f3e8e7eb3) (DefaultImporter) -> (artifact id: '5f72a8169ccab197e959c709a8d84c4c') in 0.0004338 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals using Guid(0c798f601e8d04973bbefdbf7bd6a371) (DefaultImporter) -> (artifact id: 'bb5c67a7966b8ddeb2e60f9bcc0a3989') in 0.0004504 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark using Guid(5625c11b940d020418a59e5ad230cdb0) (DefaultImporter) -> (artifact id: 'a94d090aff17cefbbe6c6c877ab7f315') in 0.0004364 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light using Guid(19acaed1f8ecfb54ab50e8d87065d38e) (DefaultImporter) -> (artifact id: 'ed02da467882ca63830baa9fb64efb3a') in 0.0004409 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/UI/UXML using Guid(8bbc585211e714551a4da7db7e3a6c02) (DefaultImporter) -> (artifact id: 'a9bb06d111e17abefdbfc4e8e32574ce') in 0.0005088 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Overlays/UXML using Guid(ae6ac50585dbe2443955c22fd9740231) (DefaultImporter) -> (artifact id: '5f4677c20e306c932f6aa639bc3b99e7') in 0.0004761 seconds
+Start importing Packages/com.unity.splines/Runtime/Unity.Splines.asmdef using Guid(21d1eb854b91ade49bc69a263d12bee2) (AssemblyDefinitionImporter) -> (artifact id: '7b0ed842ad21719ad85ebce862d028c4') in 0.0013644 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Unity.Cinemachine.asmdef using Guid(4307f53044263cf4b835bd812fc161a4) (AssemblyDefinitionImporter) -> (artifact id: 'f0c9628eb7e7e0e535f2449b8809a0fe') in 0.0010529 seconds
+Start importing Packages/com.unity.splines/Editor/Unity.Splines.Editor.asmdef using Guid(e43142fc3fec6554980dde6126631f1d) (AssemblyDefinitionImporter) -> (artifact id: '33fd6b0bbf27b40970b58dea7c0f0766') in 0.0011192 seconds
+Start importing Packages/com.unity.settings-manager/Tests/Editor/Unity.Settings.Editor.Tests.asmdef using Guid(b8c9b6a82a342504c8e4a2747471d23c) (AssemblyDefinitionImporter) -> (artifact id: '34383a109607d7b07c782d659fe04145') in 0.0012839 seconds
+Start importing Packages/com.unity.settings-manager/Editor/Unity.Settings.Editor.asmdef using Guid(49818357e697641afb75d2f8acaf1861) (AssemblyDefinitionImporter) -> (artifact id: '161aa382b3056e307244d92bf4660545') in 0.0024597 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Unity.Cinemachine.Editor.asmdef using Guid(ba8c092d026123a418fb4bfb797a7bd8) (AssemblyDefinitionImporter) -> (artifact id: 'e4c02fb5e79d330e0474bfb35a551c1d') in 0.0015746 seconds
+Start importing Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref using Guid(81deefe0c82a24b92a1d585c998fe456) (AssemblyDefinitionReferenceImporter) -> (artifact id: '48fa8e0a35cd348a95f39fcfa497cd88') in 0.0016619 seconds
+Refreshing native plugins compatible for Editor in 1.64 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.730 seconds
+Domain Reload Profiling: 5173ms
+	BeginReloadAssembly (255ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (138ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (1130ms)
+		LoadAssemblies (994ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (143ms)
+			BuildScriptInfoCaches (47ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (3731ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3591ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (3301ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Start importing Packages/com.unity.cinemachine/codecov.yml using Guid(fdf98c38f10c342468d1d19ba85e0936) (DefaultImporter) -> (artifact id: 'd43f73d72d9047d1f3c1ad377c49b7ed') in 0.0401584 seconds
+Start importing Packages/com.unity.splines/Runtime/Unity.Splines.api using Guid(130dcbb6b6362ac8c8b12deb05150463) (DefaultImporter) -> (artifact id: 'c1c9a7601887118cfe7bd31f6c1ceaad') in 0.5302385 seconds
+Start importing Packages/com.unity.splines/Editor/Unity.Splines.Editor.api using Guid(77567945c0fbe2433b7602d0be774c98) (DefaultImporter) -> (artifact id: 'fc8c43fe84daa2e6509d04e0c6a7db9c') in 0.0008762 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Linear On@2x.png using Guid(50dad30bbe8922644a0ce1606ef18295) (TextureImporter) -> (artifact id: '47d321f93394e9460570ff770668df36') in 0.0062817 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/ToolHandleParent.png using Guid(70ebf5536475b4f6d837fb3fd1208155) (TextureImporter) -> (artifact id: '0a97330e4ac25f32ec437acccdfd86df') in 0.0016477 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_ToolHandleElement@2x.png using Guid(21b205c8578d34e648f27dd6e19b5c9c) (TextureImporter) -> (artifact id: '00adabfbd9637ac6c3b91e541aa8da3b') in 0.0020611 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/FOV.png using Guid(e19681a513069400aa38220f89283d8d) (TextureImporter) -> (artifact id: 'de9ebbe0b1dd4c8c41b7fb578c00fe97') in 0.0036192 seconds
+Start importing Assets/Art/Sprites/PlayerPlaceholder.png using Guid(f1e2d3c4b5a697887766554433221100) (TextureImporter) -> (artifact id: '74a7472faf919217cccd014d25f6e0e5') in 0.0314368 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Linear@2x.png using Guid(f1367877887d28641a98258c207c3bfd) (TextureImporter) -> (artifact id: '1664b4e9d86b64cd0cef4facf765686d') in 0.0022996 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FarNearClip.png using Guid(22b1f48a2b5804151ae7f1171cc64c8c) (TextureImporter) -> (artifact id: '5476ef4b9c790226227dae45191b2c52') in 0.0035739 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FOV.png using Guid(2298d7737762c4efbbac29ffd335454a) (TextureImporter) -> (artifact id: '163eabc72e86e9c67b8210ce3add2a40') in 0.0036572 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_KnotPlacementTool@2x.png using Guid(327ae0ec745f75b4b8ef5f30a3328a85) (TextureImporter) -> (artifact id: '54d3f984a43c04ce75fa40dc31b57430') in 0.0020719 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineEditMode-Info.png using Guid(8288e6110e30c49fe94fa5891135b64d) (TextureImporter) -> (artifact id: '6d27eecaadea33f883a3b30ca1eb5b7b') in 0.0020227 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineEditMode-Info@2x.png using Guid(92d8b52044d794450a4f29aec979a34a) (TextureImporter) -> (artifact id: 'ff07cf6d15993b89e385543443cbf667') in 0.0023526 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmCamera@256.png using Guid(a297feea4ef24434e8c5465fdf835a77) (TextureImporter) -> (artifact id: '3d265ef692a9cdcfcf9e8cb8b404d397') in 0.0036804 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmExtension@256.png using Guid(032119d7426fa4256a408afec1829ac7) (TextureImporter) -> (artifact id: 'b6e7188b601b6d27ca6e8975f0806ff2') in 0.003695 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmComponent@256.png using Guid(13a8f64bcf72e441e89a7114d5ab78c2) (TextureImporter) -> (artifact id: '80b24da299b364f11d4d58f3f9ab7df1') in 0.0031647 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmExtension@256.png using Guid(3327a326efc0c4079a8eada111b11d29) (TextureImporter) -> (artifact id: '8f6a5c46386af0c5fcb49a7ba6627488') in 0.0039585 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Linear On.png using Guid(63d6e4c877b21dc4d8ab48925ba1ad41) (TextureImporter) -> (artifact id: '035377a79ebac606c6015ae0ad01dfc9') in 0.0018448 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmTrack@256.png using Guid(a3aeb1e9df0434782ba09fdf32c56611) (TextureImporter) -> (artifact id: '106597caddf9f606dd99c00456c12d93') in 0.0038389 seconds
+Start importing Assets/Art/Sprites/Platform_Wall.png using Guid(c32f0530ab52b914898306908a37456f) (TextureImporter) -> (artifact id: 'a0981dca34cc71b2b1bd87240f18a889') in 0.0117246 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineComponent@2x.png using Guid(74e0f4cadf762ff468bb8bb11c2ca3c7) (TextureImporter) -> (artifact id: '7f1fd470d39a043c9c79962384adedf0') in 0.0018197 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/ToolHandleParent@2x.png using Guid(d4cfecd590dd84bae905de63a1fc94ae) (TextureImporter) -> (artifact id: 'c4ad86901a51b2bf26f9f763efb85861') in 0.0019569 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/KnotPlacementTool.png using Guid(954ac4bd24b73a540a2e84414caf856c) (TextureImporter) -> (artifact id: 'd86c88ce31aa150759fe563fe37b5cf2') in 0.0018158 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Linear.png using Guid(a5a8010c3424a6241a13d7eba13aa4f2) (TextureImporter) -> (artifact id: '037529b2cf75b402143f96e4a0a50ae9') in 0.0017316 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/AutoSmoothKnot On.png using Guid(a52f5403392ac46e991381bec69935a7) (TextureImporter) -> (artifact id: '2db4ccf69c6b6ff79a07976b65f7e3b9') in 0.001856 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineContext.png using Guid(e566554616ca9a13a89d5af56bb7a8e6) (TextureImporter) -> (artifact id: '21d8f77254cfcf0658a3fbec63b8f8eb') in 0.0018107 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmComponent@256.png using Guid(26663a5ec9987421996161615506b6c5) (TextureImporter) -> (artifact id: '52fb9484cccb67b9d264bc7a46c986ed') in 0.0037412 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Linear On@2x.png using Guid(46d8205276dc66f46ba61fb807f9dc62) (TextureImporter) -> (artifact id: 'c49c8e12bea854e5ff90cd5a7788b3f6') in 0.0019263 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Continuous On.png using Guid(d64c7205ca5bb264892c91598b5e1402) (TextureImporter) -> (artifact id: '11305e2ba8ebbb048c50de10dd4a49b1') in 0.0016985 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_AutoSmoothKnot.png using Guid(f6adb0b82e1af42789fe5f59234e3a1b) (TextureImporter) -> (artifact id: '06442d36a62975606faf7d19a160fc78') in 0.0020082 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/AutoSmoothKnot.png using Guid(07322254109944bb4b45b7b3e0131c6d) (TextureImporter) -> (artifact id: 'd37ce9a52cf0bb4684a23e30910fcb10') in 0.0018142 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_KnotPlacementTool.png using Guid(2724a405674e9f74ca4ce8f69245a8ec) (TextureImporter) -> (artifact id: '2ea260e0a0ea86ded910ab0c1d285af5') in 0.0017139 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineComponent.png using Guid(3735bf6bd1171ad43896aaea4a3b417f) (TextureImporter) -> (artifact id: '717e2c0624d6c782113d365f94d0c5b6') in 0.0023227 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/AutoSmoothKnot@2x.png using Guid(5703201e903d44191959e7b8d400f961) (TextureImporter) -> (artifact id: '81b5d51fbb4607c41b1fea8ffd53a918') in 0.0019781 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmCamera@256.png using Guid(57da91ef0c2a5489891995dc81537253) (TextureImporter) -> (artifact id: 'ed9bc89a24f93653b6ceba8086d7378b') in 0.0039322 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_AutoSmoothKnot On.png using Guid(67f8499b5fecb4d56acff5d9ff6e15bf) (TextureImporter) -> (artifact id: '58a7162c47ab3be2e1384aaf2eacc465') in 0.0018695 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmSplineRollTool@256.png using Guid(771e00b87e3d3e24d9c0816149884055) (TextureImporter) -> (artifact id: 'f72e820feb95367dcb22f924f4df5f01') in 0.0030745 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineEditMode-Info@2x.png using Guid(b7fc12931c76a4c09b3ca863ae523672) (TextureImporter) -> (artifact id: '9468f4cabb7fa2ae0ab89628adad4aec') in 0.002469 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_AutoSmoothKnot@2x.png using Guid(485306800ba13455ca2c05a5fb6b1309) (TextureImporter) -> (artifact id: 'f576f7a627f87934dd99053bb34ac9eb') in 0.0021728 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Linear.png using Guid(a8b749c29dc36654894d508b9258a560) (TextureImporter) -> (artifact id: '94dae5fbc30e51219bcf2dafd0819989') in 0.0024098 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/TrackedObjectOffset.png using Guid(b880c0b2ad1ba404391179484fbf51bf) (TextureImporter) -> (artifact id: '379a4a321d6b88851ed8103929ddc80e') in 0.0029327 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Linear@2x.png using Guid(e835be9bc0b39f640aaa4ac10f744f9f) (TextureImporter) -> (artifact id: '25a76de6ff6b7d5098809b6f141e2760') in 0.0020123 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/ToolHandleElement.png using Guid(0951c7499e9b5445a87a82bdb1e7e691) (TextureImporter) -> (artifact id: 'e1f5f72577d6bffcc53a5f3158f36d3c') in 0.0018706 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Continuous.png using Guid(7950340077b4bfa4b8e61a4bc56f6b2e) (TextureImporter) -> (artifact id: 'b4dba0d9c318c075a0285d808eea182f') in 0.0017818 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Continuous.png using Guid(791ecff9a0b9fc1439e92e50ceb81dbb) (TextureImporter) -> (artifact id: '70a39ac0129784cf6d510cd6de8741bb') in 0.0020939 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Continuous@2x.png using Guid(990a7dc69d2190e4794d6c36679a4f2e) (TextureImporter) -> (artifact id: 'e76a6c92a5f78cfc251993944cacdbbe') in 0.0018912 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_ToolHandleParent.png using Guid(a922762599641445b9b96fc3bcafcf8b) (TextureImporter) -> (artifact id: '505bf277feab08fd0ae2e23c2a960f8b') in 0.0019054 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineContext@2x.png using Guid(2ad42e04f6841ea64a7f21707d1aec22) (TextureImporter) -> (artifact id: '74090f7ed9a9bc2fc330aba670daedfd') in 0.0020887 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Textures/TangentLineAATex.png using Guid(7ae4eee88f0f347c0adb6efc7d193d00) (TextureImporter) -> (artifact id: 'fb736e03988423e8c9bf298f139aac73') in 0.0018397 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineComponent@2x.png using Guid(9a1e76c9845005c41a09e1d83102744e) (TextureImporter) -> (artifact id: '956f25d9851c1be9f3bb4daa868a9b30') in 0.0020351 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineEditMode-Info.png using Guid(dac10fae1df6549468da9a027ab58f48) (TextureImporter) -> (artifact id: 'c73b9cdd25325eb4465c3b83471e9463') in 0.001969 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Continuous@2x.png using Guid(eac3fab9344333949be4dd5d505179d9) (TextureImporter) -> (artifact id: 'ed10e3af6d6518fa0bf138e544223fff') in 0.0019036 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineContext@2x.png using Guid(fa78221ae4df49ddfb00a8ca3d980e19) (TextureImporter) -> (artifact id: 'b327bd5d92501e11a022776ebccb2e79') in 0.002209 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_AutoSmoothKnot On@2x.png using Guid(0b2a7c32dd38d425f9a9418e85887dd9) (TextureImporter) -> (artifact id: '828e9cac7839c8ced71c8c299ad273b3') in 0.0022889 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmSplineRollTool@256.png using Guid(1b2b4365da9f1fe4ea910a6cc7b91b18) (TextureImporter) -> (artifact id: 'b0b9eec755620930a0a37ac04540c1b3') in 0.003824 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/AutoSmoothKnot On@2x.png using Guid(9b61528aebb8f4f3fb747bdfa7bc80b0) (TextureImporter) -> (artifact id: '332e2cafa1d246d7fa7c60b0b5cc9b62') in 0.0018747 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Continuous On@2x.png using Guid(bb77b85668352d3488c1a957ed7509a1) (TextureImporter) -> (artifact id: '2b5255065a27ac502842bddff59caa57') in 0.0017421 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Continuous On@2x.png using Guid(bb7bb364d1bd6bf4487c06678f176dff) (TextureImporter) -> (artifact id: 'daa6765b21f92ad83e72ecf3ef805224') in 0.0019036 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/SplineContext.png using Guid(fbb7a4425fc8e4e5bb4f932ae7f52073) (TextureImporter) -> (artifact id: 'b0adc70b7fd2550bb6184e42b0d358e9') in 0.0018587 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/SceneToolsLabelBackground.png using Guid(5ca5d3d4919ce4b4bbbc4e3c67bf6320) (TextureImporter) -> (artifact id: 'e126df58fb42e3f4538969f8dda781bc') in 0.0022708 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FollowOffset.png using Guid(7cd5c9cd9de00488ebbdd134c8a20a40) (TextureImporter) -> (artifact id: '893209484aefb67f79eaf91eb9c8d78b') in 0.0029284 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmTrack@256.png using Guid(9c4067e4e9dc4483f8164d5d36b6e2c5) (TextureImporter) -> (artifact id: '1bc605f08a23858f29c6a464e434c91f') in 0.003762 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/CmSplineLookAtTargetsTool@256.png using Guid(4d21a1675986608408960b065895aa54) (TextureImporter) -> (artifact id: '7d35ee9c6bc1a4c9bda8720a82c8506e') in 0.0026801 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_ToolHandleParent@2x.png using Guid(5db90e771d0224015980a051350f12b3) (TextureImporter) -> (artifact id: 'ea93e367946c924228d03e4a9dc0c6d1') in 0.0023135 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/FarNearClip.png using Guid(ada37388502cc47db96a985a8eeca2c1) (TextureImporter) -> (artifact id: 'b42638b803d2cf00e15f65edd31af35d') in 0.0034641 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/Tangent_Linear On.png using Guid(cd7588d2cd80879409b245a5a34211f4) (TextureImporter) -> (artifact id: '905f3257afc761645aeeb0b7441a9137') in 0.0022712 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/KnotPlacementTool@2x.png using Guid(fdacd376014f8b743a9561d5652ca823) (TextureImporter) -> (artifact id: 'c35ba830d25f2447793ec6f2f614ee03') in 0.0042216 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/TrackedObjectOffset.png using Guid(1edfbc3a6b2e0423483a2af98a4bb746) (TextureImporter) -> (artifact id: '9b31516e6522fb6d7bffaa1ce7f2c40c') in 0.0030519 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/ToolHandleElement@2x.png using Guid(5e1d22189222c4391a54ed3a476adb97) (TextureImporter) -> (artifact id: '6c83b362b7914b4be18ace46c5519a31') in 0.0024666 seconds
+Start importing Assets/Art/Sprites/Platform_Ground.png using Guid(8e02bde324a22ca4b92ec82db4a76ea6) (TextureImporter) -> (artifact id: '582998eb52c21d22c1da1497cd3db21b') in 0.0091434 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Dark/FollowOffset.png using Guid(9e355d6040d494ded95f7b8bd325e899) (TextureImporter) -> (artifact id: '65e187b7be13859d09c601345e1c61f0') in 0.0031418 seconds
+Start importing Packages/com.unity.settings-manager/Content/Options.png using Guid(9eff477e4332346818c96745043dae9e) (TextureImporter) -> (artifact id: '1b3560822da56114c0d83089468d2bd0') in 0.0022835 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmSplineLookAtTargetsTool@256.png using Guid(be15d08d234eb234592b477784a70fd0) (TextureImporter) -> (artifact id: 'bc78e9c33780502d8cfccddb82ed6117') in 0.0034532 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_ToolHandleElement.png using Guid(ef6290eaad7c44a918886c5d1995a421) (TextureImporter) -> (artifact id: 'd63003a581759fe4568860474c886170') in 0.0023201 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_Tangent_Continuous On.png using Guid(efc4142e9b4b1a140a5c029f15ca125f) (TextureImporter) -> (artifact id: 'a8075d2fecfb626e28d7bfe9097c3494') in 0.0016655 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Icons/d_SplineComponent.png using Guid(ef393047d79a40a4abf8394716d6d703) (TextureImporter) -> (artifact id: '24e508e185cef65fe5cd418cb4552438') in 0.0017274 seconds
+Start importing Packages/com.unity.splines/Shader/Spline.cginc using Guid(323a5a17a4cfa5f93a7952c2ff357455) (ShaderIncludeImporter) -> (artifact id: '7a133ddd8d4cd64ca7e91537242204f9') in 0.0017437 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/StdLib.hlsl using Guid(f34d110791e602a418f182fbec6b699d) (ShaderIncludeImporter) -> (artifact id: '69c40f3e257d50d3eb9a017ccf4db45d') in 0.0012924 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/CMWaveform.shader using Guid(e4e5d566a8aa9914c906555a6857fcb9) (ShaderImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+ -> (artifact id: 'b4e75c9051ba405bf4b2d21523c65767') in 0.0321232 seconds
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/CMWaveform.compute using Guid(6dd3f00b9032de54c8784df7bdc6fdf8) (ComputeShaderImporter) -> (artifact id: '2e4d1eb87ef56fe21ef38cc0bf9d2c78') in 0.0028474 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_wideangle_strong.asset using Guid(20e46be82478fa24b90f748044c06b4b) (NativeFormatImporter) -> (artifact id: 'f5c9cff0117468a9738ed88329faad61') in 0.0019902 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_normal_extreme.asset using Guid(20a705aea2d80e0478fb89b6f43d8530) (NativeFormatImporter) -> (artifact id: 'cea95fd2472fc9634f8adc1d046ec83a') in 0.0018699 seconds
+Start importing Assets/ScriptableObjects/DefaultHeroConfig.asset using Guid(a1b2c3d4e5f6789012345678abcdef99) (NativeFormatImporter) -> (artifact id: 'c24d0a22475c177902d8662d8324e3cb') in 0.0016474 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_normal_strong.asset using Guid(b241f91b9ccf8ff489abf204b30d3112) (NativeFormatImporter) -> (artifact id: 'b61d36e0224f57865f377d553797e112') in 0.0014785 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_tele_mild.asset using Guid(a3dacaec0287d7444b4bd276816e1666) (NativeFormatImporter) -> (artifact id: '463dae3ffbcf86a0f5571c0e49613aca') in 0.0017999 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Debug/CinemachinePanelSettings.asset using Guid(34f8af425f4594331ac532e00b9e83bf) (NativeFormatImporter) -> (artifact id: 'a98916253895edc5fdd839ca0e3ea1bb') in 0.0070961 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_tele_strong.asset using Guid(554b0ed52734c154eab51f6cedd3a7d7) (NativeFormatImporter) -> (artifact id: '2c67b81141139b2ef57801f391173e9f') in 0.0015498 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_normal_mild.asset using Guid(46965f9cbaf525742a6da4c2172a99cd) (NativeFormatImporter) -> (artifact id: '8e510a09d04f04f40c999e94787aec93') in 0.0016823 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/Handheld_wideangle_mild.asset using Guid(8608ec81ee27a15488d33f9dad239e91) (NativeFormatImporter) -> (artifact id: '54ca8cd30c551e578c95dc7d3b372813') in 0.001591 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/6D Shake.asset using Guid(69ce8388f6785dd4c8c39915efece2f4) (NativeFormatImporter) -> (artifact id: '2ffb37b25191289a9e3ad0049439dfb9') in 0.0013895 seconds
+Start importing Packages/com.unity.cinemachine/Presets/Noise/6D Wobble.asset using Guid(e9ce97b7a206dc64d90931ea044e0c72) (NativeFormatImporter) -> (artifact id: '8f1f2d0f86f03f1791c2f7cb9d70de3c') in 0.0015111 seconds
+Start importing Packages/com.unity.settings-manager/package.json using Guid(3001f7491ac66e34a9694543d9f8b1ee) (PackageManifestImporter) -> (artifact id: 'd8b31d03d58a97ca5bf99bb7b9b5168c') in 0.0023198 seconds
+Start importing Packages/com.unity.cinemachine/LICENSE.md using Guid(320f1f07d0845624cb1b7a4839826250) (TextScriptImporter) -> (artifact id: '89dbee06c4e49abbe09c04c11fddf17a') in 0.0022341 seconds
+Start importing Packages/com.unity.splines/CHANGELOG.md using Guid(06ba237cdfbe2264f89158773bd6268b) (TextScriptImporter) -> (artifact id: 'b63b7ac9f00ec8cef424a388b2f236c7') in 0.002378 seconds
+Start importing Packages/com.unity.settings-manager/README.md using Guid(561e43493ab773746acefbe0f624795e) (TextScriptImporter) -> (artifact id: '2730ff250445d40b4fa8a896eed867a9') in 0.0022201 seconds
+Start importing Packages/com.unity.cinemachine/Third Party Notices.md using Guid(2764ce5fee86e464f92b661bbaa7ed45) (TextScriptImporter) -> (artifact id: '0a3db900a2eb644b4d30806c8cfb1115') in 0.0021508 seconds
+Start importing Packages/com.unity.settings-manager/LICENSE.md using Guid(27264456a8bbc094d9479c5d5f9b0aa5) (TextScriptImporter) -> (artifact id: '10239280257e22c85094afc23a24a790') in 0.0023148 seconds
+Start importing Packages/com.unity.settings-manager/CHANGELOG.md using Guid(4774b2f29b63d2844915d86afff02b47) (TextScriptImporter) -> (artifact id: 'c0e18736d7610ebbfb81c769d7fcae04') in 0.0021487 seconds
+Start importing Packages/com.unity.cinemachine/ValidationExceptions.json using Guid(b7ff2a01b79594de080bb89895f6e5ed) (TextScriptImporter) -> (artifact id: 'd28f1a72dc17d010ab2c305c73dd620e') in 0.002801 seconds
+Start importing Packages/com.unity.splines/LICENSE.md using Guid(2808bd25b3f651d4d9ed886d32d96e95) (TextScriptImporter) -> (artifact id: '588c4a52f96be60747296a0d42d967d8') in 0.0019144 seconds
+Start importing Packages/com.unity.cinemachine/license.txt using Guid(3958e97119b89b14893728476c991114) (TextScriptImporter) -> (artifact id: '65c533c1aeeb5b05f7f9ea7a39daa563') in 0.0021127 seconds
+Start importing Packages/com.unity.cinemachine/CHANGELOG.md using Guid(5961b2a4e47c5db438e1234cf03a2a09) (TextScriptImporter) -> (artifact id: 'ce1a5c94baa3979514f51e1881b4f64a') in 0.002193 seconds
+Start importing Packages/com.unity.cinemachine/package.json using Guid(7a97571b2775aab4e8bf63d9ceb96743) (PackageManifestImporter) -> (artifact id: 'bb1c2ae710053eefe755adebc1275998') in 0.0021225 seconds
+Start importing Packages/com.unity.splines/README.md using Guid(fc612f2a214eff2439253755a2d04252) (TextScriptImporter) -> (artifact id: '389ccdc0ec54f0ee87098558e1a6156e') in 0.002533 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Input/CinemachineDefaultInputActions.inputactions using Guid(1d6e640e716dc4ff6989b73d02023f2b) (ScriptedImporter) -> (artifact id: '4e3d8bfd09601ccc110e49b59844cace') in 0.0243146 seconds
+Start importing Packages/com.unity.cinemachine/README.md using Guid(5fddd5fc411394deea42ff11104f70a2) (TextScriptImporter) -> (artifact id: '2355e613b32f9eb8b59ed74d93e83140') in 0.0018715 seconds
+Start importing Packages/com.unity.splines/package.json using Guid(7fbddc3d391b09748856824634187946) (PackageManifestImporter) -> (artifact id: 'db07525761f24cf6b8b78cf40802b28e') in 0.0020396 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineAnimateInspectorLight.uss using Guid(602641ea1fd244aaba8015c11565a988) (ScriptedImporter) -> (artifact id: '3021a580d85e0e7eea135afc2a81ce66') in 0.0268834 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineInspectorCommon.uss using Guid(822ea5c93c1bf9349bdbc5af5e6add1c) (ScriptedImporter) -> (artifact id: '40ee4fb63675da083b10745e4b97d180') in 0.0502086 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineInspectorLight.uss using Guid(c33ec34c59a5fa94bad4452c78635f07) (ScriptedImporter) -> (artifact id: 'c14835525b9bd465c953dd07e756fd66') in 0.0269508 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineInspectorDark.uss using Guid(e33dd4fb2aaf76843bca29d96b840b15) (ScriptedImporter) -> (artifact id: 'bd99186144b78efa182c3f2f3e4f4bf6') in 0.0071967 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineAnimateInspectorCommon.uss using Guid(2a8a7b20b8efb4f0ab1c2301dbc0e86c) (ScriptedImporter) -> (artifact id: '2cba7399478efdbf0281b5c83e75f716') in 0.0033813 seconds
+Start importing Packages/com.unity.splines/Editor/Stylesheets/SplineAnimateInspectorDark.uss using Guid(da6f83a9449ae48458b549c1db0a17b7) (ScriptedImporter) -> (artifact id: '846e625dae2d831d10cc976ae98a2b10') in 0.0025905 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Debug/CinemachineRuntimeTheme.tss using Guid(df9aec944f4474a04847b6d6375e4138) (ScriptedImporter) -> (artifact id: '3597049f1e919fbef20c3091bc6b78ad') in 0.0589924 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Overlays/UXML/splinedata-element.uxml using Guid(8045215604eafc241a3a7e43d79d9c26) (ScriptedImporter) -> (artifact id: 'e8d24645a3bd75fa13341e0d3c989bfe') in 0.022913 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/UI/UXML/splineanimate-inspector.uxml using Guid(910bf23ae6a63488796235071cb3dd65) (ScriptedImporter) -> (artifact id: 'b15718b29d6d789da87c0211069b67e3') in 0.0114862 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Overlays/UXML/splinedata-go-foldout.uxml using Guid(03609967e1f312e48804fa5652a4c67b) (ScriptedImporter) -> (artifact id: '6eaa30b1c1b86d328086aa004399a7ae') in 0.0031166 seconds
+Start importing Packages/com.unity.splines/Editor/Resources/Overlays/UXML/splinedata-overlay.uxml using Guid(7b56410d2bc49924abfcf665ca479466) (ScriptedImporter) -> (artifact id: '3ce074f460322430977c8e8bce87302c') in 0.004351 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aacd4eede69b8d143a0f4cd6939483b2): Total: 8.666 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=197 (actual=197, local cache=0, cache server=0)
+		Asset DB Process Time: managed=43 ms, native=5577 ms
+		Asset DB Callback time: managed=260 ms, native=44 ms
+		Scripting: domain reloads=1, domain reload time=1541 ms, compile time=1104 ms, other=93 ms
+		Project Asset Count: scripts=1528, non-scripts=3025
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 1.782ms
+	ApplyChangesToAssetFolders: 0.413ms
+	Scan: 116.810ms
+	OnSourceAssetsModified: 0.694ms
+	CategorizeAssetsWithTransientArtifact: 43.751ms
+	ProcessAssetsWithTransientArtifactChanges: 79.603ms
+	CategorizeAssets: 57.747ms
+	ImportOutOfDateAssets: 5150.535ms (2635.061ms without children)
+		ImportManagerImport: 1408.571ms (98.172ms without children)
+			ImportInProcess: 1309.290ms
+			UpdateCategorizedAssets: 1.109ms
+		CompileScripts: 1104.412ms
+		ReloadNativeAssets: 0.055ms
+		UnloadImportedAssets: 0.799ms
+		ReloadImportedAssets: 0.017ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.096ms
+		InitializingProgressBar: 0.018ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.504ms
+	PostProcessAllAssets: 299.108ms
+	Hotreload: 4.112ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 0.270ms
+	PersistCurrentRevisions: 0.752ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 3.244ms
+	Untracked: 2910.013ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 2.266ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-X28H-J2KT-ASXX-SVC6-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-2DJumpPJ
+Unloading 51 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7419 unused Assets / (14.4 MB). Loaded Objects now: 8088.
+Memory consumption went from 220.6 MB to 206.2 MB.
+Total: 10.858300 ms (FindLiveObjects: 0.631600 ms CreateObjectMapping: 0.640600 ms MarkObjects: 6.067200 ms  DeleteObjects: 3.518300 ms)
+
+Start importing Assets/ScriptableObjects/DefaultHeroConfig.asset using Guid(a1b2c3d4e5f6789012345678abcdef99) (NativeFormatImporter) -> (artifact id: '830f16058ec827f8d3b2b1315e304851') in 0.0019283 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a6c657baed66c1e43975739ed8799dec): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Animations using Guid(a4e3e527d7c7b3246b2b822a116a29f8) (DefaultImporter) -> (artifact id: '3218da76512171d3a6d9712b4a78b53b') in 0.0093481 seconds
+Refreshing native plugins compatible for Editor in 1.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fbc87a962732fad4e97da54328c4e119): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Animations/HeroAnimator.controller using Guid(b5bf02a57e58b4345a24ef66f6fa7a2e) (NativeFormatImporter) -> (artifact id: '69fa97912d2a9fab52154b42a318cffa') in 0.0015992 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=55bf3d0fed8662244896d9544fbc8d14): Total: 0.026 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Prefabs using Guid(9d0274e261e42b549a9328bff1c16ffe) (DefaultImporter) -> (artifact id: '105593e6bdb3c397e890717d17db49c9') in 0.0073774 seconds
+Refreshing native plugins compatible for Editor in 1.63 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5defab33654e2964eae704282dedb567): Total: 0.028 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Prefabs/Player.prefab using Guid(a843e9d940abcaa42aacf899f1078c4a) (PrefabImporter) -> (artifact id: 'ad83bce1d0a395603be4e8459b24d5d1') in 0.0120282 seconds
+Refreshing native plugins compatible for Editor in 1.76 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ca3c352f73ede2042950043f51b25fe7): Total: 0.040 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (6.1 KB). Loaded Objects now: 8100.
+Memory consumption went from 180.6 MB to 180.6 MB.
+Total: 5.989300 ms (FindLiveObjects: 0.247900 ms CreateObjectMapping: 0.167700 ms MarkObjects: 5.476900 ms  DeleteObjects: 0.095900 ms)
+
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:192)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Platform_Left.png using Guid(8123cf77feeb05248961e069f0a96635) (TextureImporter) -> (artifact id: '7a649145950a947fd046edff2d51e2b2') in 0.010813 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b4e0148c539ea64408006cec5ee5502e): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Platform_Left.png using Guid(8123cf77feeb05248961e069f0a96635) (TextureImporter) -> (artifact id: '23c252c1b9be95ca10860770c3b2b318') in 0.0120384 seconds
+Refreshing native plugins compatible for Editor in 2.15 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ece5a33e098fafa438d0b43cc219886f): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:193)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Platform_Right.png using Guid(334c12afe1f83254c8b20be3e4bd8835) (TextureImporter) -> (artifact id: '2583a8a1e4bf3503a8fed465c1a89ef1') in 0.0136642 seconds
+Refreshing native plugins compatible for Editor in 1.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a07c714402db2e74ab495af6e0dbb7c9): Total: 0.040 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Platform_Right.png using Guid(334c12afe1f83254c8b20be3e4bd8835) (TextureImporter) -> (artifact id: 'b9faf29dcbfefd3f7e40efdfeb730626') in 0.0102605 seconds
+Refreshing native plugins compatible for Editor in 1.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a997795c1f8ce3d42b14bffa4fda71a5): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:194)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Platform_High.png using Guid(6851108f22b435049a45586ed7506668) (TextureImporter) -> (artifact id: '7215bc1d8a93d95b569037ae30bac8ef') in 0.0102631 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0988166e698d29341bb76e005ecc75bf): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Platform_High.png using Guid(6851108f22b435049a45586ed7506668) (TextureImporter) -> (artifact id: '9194489fbf68eaba3c74685716587c68') in 0.010357 seconds
+Refreshing native plugins compatible for Editor in 1.54 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=98f8fdba254217d489bf16cf11123ae9): Total: 0.047 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:195)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Wall_Left.png using Guid(29c0315fb180abe4cbd160622d177d58) (TextureImporter) -> (artifact id: 'd4f8d1ef53962309470e658bc13547ae') in 0.010339 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fc27ea9e333ab5c45a7068d31ced4bea): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Wall_Left.png using Guid(29c0315fb180abe4cbd160622d177d58) (TextureImporter) -> (artifact id: 'd28594a9c7ff31ddfbb3bf7e4b4f4a65') in 0.0098808 seconds
+Refreshing native plugins compatible for Editor in 1.60 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4d95fb66238f4ac4d9fab12157796954): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:196)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Wall_Right.png using Guid(36ec9417f4d6c514b8917fc9cf1e52a4) (TextureImporter) -> (artifact id: '8a2bd16f2d6d5afa106bfafbbeefabca') in 0.0098095 seconds
+Refreshing native plugins compatible for Editor in 1.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b27432fb57f3de043a0df26743db7863): Total: 0.030 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Wall_Right.png using Guid(36ec9417f4d6c514b8917fc9cf1e52a4) (TextureImporter) -> (artifact id: 'fc12344ed3ee0c918b0512867921c930') in 0.0100888 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b68134c142461a2458ee393ce8ac8b07): Total: 0.046 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:197)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_DashHall.png using Guid(627da91cd179b2f4d9770a31d315e671) (TextureImporter) -> (artifact id: 'c626365e48bba22f2995b918f3c3ee75') in 0.0101553 seconds
+Refreshing native plugins compatible for Editor in 1.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ecbde28db82bf34d88790585c918dd0): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_DashHall.png using Guid(627da91cd179b2f4d9770a31d315e671) (TextureImporter) -> (artifact id: '2f98ee819b227bb87108b18bea7c723d') in 0.0106458 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=db657262f63ea7841bcf062e609a2e7a): Total: 0.047 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:198)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Pit_Left.png using Guid(356b0de3805c07440a55949eaf2c480e) (TextureImporter) -> (artifact id: 'f4f619ab99bbe1610717ad2bf89df96c') in 0.0102395 seconds
+Refreshing native plugins compatible for Editor in 1.99 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ab4286fe1a6cdcc49b265fdd787a417b): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Pit_Left.png using Guid(356b0de3805c07440a55949eaf2c480e) (TextureImporter) -> (artifact id: '4ebce1cbaea96c56483fd2c9b522245d') in 0.0114137 seconds
+Refreshing native plugins compatible for Editor in 1.89 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c35216cfbc9ca7b4da1b895d2dcfe5c5): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:199)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Sprites/Platform_Pit_Right.png using Guid(5ae5fab03539d9044862b8afa00bc11d) (TextureImporter) -> (artifact id: 'c177c66a9b6e18701317d26dd18f86d7') in 0.0138529 seconds
+Refreshing native plugins compatible for Editor in 2.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fdb64f829517b564fa1569f724cd5ebd): Total: 0.046 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Sprites/Platform_Pit_Right.png using Guid(5ae5fab03539d9044862b8afa00bc11d) (TextureImporter) -> (artifact id: '9ad0415198f408ab3dbb497419d90e2a') in 0.0147117 seconds
+Refreshing native plugins compatible for Editor in 1.61 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4f8ecf0af8c18844cb37a15920f29db2): Total: 0.061 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+Hollow.Editor.HollowSceneSetup:CreatePlatform (string,UnityEngine.Vector3,UnityEngine.Vector2,UnityEngine.Color) (at Assets/Scripts/Editor/HollowSceneSetup.cs:276)
+Hollow.Editor.HollowSceneSetup:CreateMovementTestScene (UnityEngine.GameObject) (at Assets/Scripts/Editor/HollowSceneSetup.cs:200)
+Hollow.Editor.HollowSceneSetup:SetupMovementTestScene () (at Assets/Scripts/Editor/HollowSceneSetup.cs:26)
+
+[Assets/Scripts/Editor/HollowSceneSetup.cs line 26]
+
+Start importing Assets/Art/Animations/HeroAnimator.controller using Guid(b5bf02a57e58b4345a24ef66f6fa7a2e) (NativeFormatImporter) -> (artifact id: '0bfce2b5242b5e841f845c825fec53bf') in 0.0020336 seconds
+Refreshing native plugins compatible for Editor in 2.18 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=155847a0d19dac74fa79fa3a912101a4): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Scenes/MovementTest.unity using Guid(338121fddfc6e3548857e6d6e9744206) (DefaultImporter) -> (artifact id: '8f6d2fdb129e59d8809bd4ab3328dc42') in 0.0011882 seconds
+Refreshing native plugins compatible for Editor in 1.95 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1de5ae746183d614892dd8fe949ecb17): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter) -> (artifact id: '2dabbbc3e466f58752a1c53cc89f70ea') in 0.0017749 seconds
+Refreshing native plugins compatible for Editor in 2.11 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b349be742a320ef41a54ef863dd82528): Total: 0.025 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=d809110e07987504a8e6049862f4bec6): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] License Notification channel disconnected successfully.
+[Licensing::IpcConnector] License Client channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
