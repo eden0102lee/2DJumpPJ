@@ -75,6 +75,7 @@ namespace Hollow.Player
         {
             UpdateFacing();
             UpdateTimers();
+            Sensor.UpdateSensor(FacingDirection);
             StateMachine.Tick();
             HeroAnimator?.UpdateAnimator(this);
         }
