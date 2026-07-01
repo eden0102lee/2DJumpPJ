@@ -185,6 +185,15 @@ namespace Hollow.Editor
             CreateSolidPlatform(parent, "WallLedge_R_02", new Vector3(5.1f, 13.5f, 0f), new Vector2(1.2f, 0.4f), ThinPlatColor);
             CreateSolidPlatform(parent, "WallLedge_R_03", new Vector3(5.1f, 21f, 0f), new Vector2(1.2f, 0.4f), ThinPlatColor);
             CreateSolidPlatform(parent, "WallLedge_R_04", new Vector3(5.1f, 29f, 0f), new Vector2(1.2f, 0.4f), ThinPlatColor);
+
+            // Silksong movement validation zones
+            CreateSolidPlatform(parent, "SprintJump_Only", new Vector3(4.8f, 8.5f, 0f), new Vector2(2f, 0.4f), new Color(0.55f, 0.38f, 0.58f));
+            CreateSolidPlatform(parent, "WallDash_Gap", new Vector3(-4.8f, 15.5f, 0f), new Vector2(2.2f, 0.4f), new Color(0.52f, 0.36f, 0.56f));
+            CreateSolidPlatform(parent, "ClimbShaft_Top", new Vector3(4.8f, 24.5f, 0f), new Vector2(2.5f, 0.45f), new Color(0.54f, 0.37f, 0.57f));
+            CreateSolidPlatform(parent, "DownDash_ShaftTop", new Vector3(4.5f, 16.5f, 0f), new Vector2(1.8f, 0.35f), new Color(0.5f, 0.35f, 0.54f));
+            CreateSolidPlatform(parent, "DownDash_ShaftBot", new Vector3(4.5f, 13f, 0f), new Vector2(1.8f, 0.35f), new Color(0.46f, 0.32f, 0.5f));
+            CreateSolidPlatform(parent, "DownDash_ShaftWallL", new Vector3(3.5f, 14.75f, 0f), new Vector2(0.4f, 4f), WallColor, "Wall");
+            CreateSolidPlatform(parent, "DownDash_ShaftWallR", new Vector3(5.5f, 14.75f, 0f), new Vector2(0.4f, 4f), WallColor, "Wall");
         }
 
         private static void CreateDecorations(Transform parent)

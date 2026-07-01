@@ -10,6 +10,9 @@ namespace Hollow.Player
         private static readonly int VelocityY = Animator.StringToHash("VelocityY");
         private static readonly int IsWallSliding = Animator.StringToHash("IsWallSliding");
         private static readonly int IsDashing = Animator.StringToHash("IsDashing");
+        private static readonly int IsSprinting = Animator.StringToHash("IsSprinting");
+        private static readonly int IsWallClimbing = Animator.StringToHash("IsWallClimbing");
+        private static readonly int IsDownDashing = Animator.StringToHash("IsDownDashing");
 
         private Animator _animator;
         private SpriteRenderer _spriteRenderer;
@@ -33,6 +36,9 @@ namespace Hollow.Player
             _animator.SetFloat(VelocityY, rb.linearVelocity.y);
             _animator.SetBool(IsWallSliding, stateType == typeof(HeroWallSlideState));
             _animator.SetBool(IsDashing, stateType == typeof(HeroDashState));
+            _animator.SetBool(IsSprinting, stateType == typeof(HeroSprintState));
+            _animator.SetBool(IsWallClimbing, stateType == typeof(HeroWallClimbState));
+            _animator.SetBool(IsDownDashing, stateType == typeof(HeroDownDashState));
 
             if (_spriteRenderer != null && hero.FacingDirection != 0)
             {

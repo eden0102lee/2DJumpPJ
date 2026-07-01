@@ -24,17 +24,31 @@ namespace Hollow.Player
 
         protected float MoveInput => Hero.GetEffectiveMoveInput();
 
-        protected void ApplyHorizontalMovement(bool grounded)
+        protected void ApplyHorizontalMovement(bool grounded, float targetSpeed = -1f)
         {
             if (!Hero.CanMove)
                 return;
 
-            var targetSpeed = MoveInput * Config.runSpeed;
+            if (targetSpeed < 0f)
+                targetSpeed = Config.runSpeed;
+
+            var target = MoveInput * targetSpeed;
             var accel = grounded ? Config.acceleration : Config.airAcceleration;
             var decel = grounded ? Config.deceleration : Config.airDeceleration;
-            var rate = Mathf.Abs(targetSpeed) > 0.01f ? accel : decel;
+            var rate = Mathf.Abs(target) > 0.01f ? accel : decel;
 
-            var newX = Mathf.MoveTowards(Rb.linearVelocity.x, targetSpeed, rate * Time.fixedDeltaTime);
+            var newX = Mathf.MoveTowards(Rb.linearVelocity.x, target, rate * Time.fixedDeltaTime);
+            Rb.linearVelocity = new Vector2(newX, Rb.linearVelocity.y);
+        }
+
+        protected void ApplySprintMovement()
+        {
+            if (!Hero.CanMove)
+                return;
+
+            var target = MoveInput * Config.sprintSpeed;
+            var rate = Mathf.Abs(target) > 0.01f ? Config.sprintAcceleration : Config.deceleration;
+            var newX = Mathf.MoveTowards(Rb.linearVelocity.x, target, rate * Time.fixedDeltaTime);
             Rb.linearVelocity = new Vector2(newX, Rb.linearVelocity.y);
         }
 
@@ -61,13 +75,55 @@ namespace Hollow.Player
             Hero.TryConsumeJump();
         }
 
-        protected void TryDash()
+        protected void TryTapDash()
         {
-            if (!Hero.Input.DashPressed)
+            if (Hero.ShouldTryDownDash())
+            {
+                if (Hero.ShouldTryAirDash() && Hero.TryStartDash())
+                    Hero.StateMachine.ChangeState(typeof(HeroDownDashState));
+                return;
+            }
+
+            if (Sensor.IsGrounded)
+            {
+                if (Hero.ShouldTryGroundDash() && Hero.TryStartDash())
+                    Hero.StateMachine.ChangeState(typeof(HeroDashState));
+            }
+            else if (Hero.ShouldTryAirDash() && Hero.TryStartDash())
+            {
+                Hero.StateMachine.ChangeState(typeof(HeroDashState));
+            }
+        }
+
+        protected void TryStartSprint()
+        {
+            if (!Hero.ShouldStartSprint())
                 return;
 
-            if (Hero.TryStartDash())
-                Hero.StateMachine.ChangeState(typeof(HeroDashState));
+            Hero.StateMachine.ChangeState(typeof(HeroSprintState));
+        }
+
+        protected void TryWallUpDash()
+        {
+            if (!IsCurrentState<HeroWallSlideState>())
+                return;
+
+            if (!Hero.ShouldTryWallUpDash())
+                return;
+
+            if (!Hero.TryStartDash())
+                return;
+
+            Hero.PerformWallUpDash();
+            Hero.StateMachine.ChangeState(typeof(HeroFallState));
+        }
+
+        protected void TryWallClimbTransition()
+        {
+            if (!Hero.ShouldTryWallClimb())
+                return;
+
+            Hero.StateMachine.ChangeState(typeof(HeroWallClimbState));
         }
 
         protected bool IsCurrentState<T>() where T : IHeroState

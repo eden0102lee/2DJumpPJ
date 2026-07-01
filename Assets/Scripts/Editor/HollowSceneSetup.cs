@@ -57,14 +57,20 @@ namespace Hollow.Editor
             controller.AddParameter("VelocityY", AnimatorControllerParameterType.Float);
             controller.AddParameter("IsWallSliding", AnimatorControllerParameterType.Bool);
             controller.AddParameter("IsDashing", AnimatorControllerParameterType.Bool);
+            controller.AddParameter("IsSprinting", AnimatorControllerParameterType.Bool);
+            controller.AddParameter("IsWallClimbing", AnimatorControllerParameterType.Bool);
+            controller.AddParameter("IsDownDashing", AnimatorControllerParameterType.Bool);
 
             var root = controller.layers[0].stateMachine;
             root.AddState("Idle", new Vector3(300, 0, 0));
             root.AddState("Run", new Vector3(300, 80, 0));
+            root.AddState("Sprint", new Vector3(300, 160, 0));
             root.AddState("Jump", new Vector3(500, 0, 0));
             root.AddState("Fall", new Vector3(500, 80, 0));
             root.AddState("WallSlide", new Vector3(500, 160, 0));
+            root.AddState("WallClimb", new Vector3(500, 240, 0));
             root.AddState("Dash", new Vector3(700, 0, 0));
+            root.AddState("DownDash", new Vector3(700, 80, 0));
             root.defaultState = root.states[0].state;
         }
 
@@ -98,6 +104,7 @@ namespace Hollow.Editor
             var lookAheadSo = new SerializedObject(lookAhead);
             lookAheadSo.FindProperty("lookAheadDistance").floatValue = 2f;
             lookAheadSo.FindProperty("lookAheadSmooth").floatValue = 5f;
+            lookAheadSo.FindProperty("sprintLookAheadMultiplier").floatValue = 1.6f;
             lookAheadSo.ApplyModifiedPropertiesWithoutUndo();
 
             var visual = new GameObject("Visual");
@@ -129,15 +136,20 @@ namespace Hollow.Editor
             lookAheadSo.FindProperty("inputReader").objectReferenceValue = inputReader;
             lookAheadSo.ApplyModifiedPropertiesWithoutUndo();
 
+            var hero = player.AddComponent<HeroController>();
+            var heroSo = new SerializedObject(hero);
+            heroSo.FindProperty("config").objectReferenceValue = config;
+            heroSo.ApplyModifiedPropertiesWithoutUndo();
+
+            lookAheadSo = new SerializedObject(lookAhead);
+            lookAheadSo.FindProperty("heroController").objectReferenceValue = hero;
+            lookAheadSo.ApplyModifiedPropertiesWithoutUndo();
+
             var animator = player.AddComponent<Animator>();
             if (animatorController != null)
                 animator.runtimeAnimatorController = animatorController;
 
             player.AddComponent<HeroAnimator>();
-            var hero = player.AddComponent<HeroController>();
-            var heroSo = new SerializedObject(hero);
-            heroSo.FindProperty("config").objectReferenceValue = config;
-            heroSo.ApplyModifiedPropertiesWithoutUndo();
 
             return player;
         }
@@ -214,6 +226,20 @@ namespace Hollow.Editor
             CreatePlatform("DashHall", new Vector3(0f, -1f, 0f), new Vector2(20f, 0.5f), new Color(0.38f, 0.32f, 0.48f));
             CreatePlatform("Pit_Left", new Vector3(-4f, -5f, 0f), new Vector2(3f, 1f), new Color(0.32f, 0.28f, 0.42f));
             CreatePlatform("Pit_Right", new Vector3(4f, -5f, 0f), new Vector2(3f, 1f), new Color(0.32f, 0.28f, 0.42f));
+
+            // Silksong movement validation zones
+            CreatePlatform("SprintJump_Start", new Vector3(12f, -1f, 0f), new Vector2(4f, 0.5f), new Color(0.5f, 0.35f, 0.55f));
+            CreatePlatform("SprintJump_Target", new Vector3(18f, 2.5f, 0f), new Vector2(3f, 0.5f), new Color(0.55f, 0.4f, 0.6f));
+            CreatePlatform("WallJump_Left", new Vector3(-14f, 0f, 0f), new Vector2(1f, 10f), new Color(0.28f, 0.26f, 0.38f));
+            CreatePlatform("WallJump_Right", new Vector3(-8f, 0f, 0f), new Vector2(1f, 10f), new Color(0.28f, 0.26f, 0.38f));
+            CreatePlatform("WallJump_Target", new Vector3(-11f, 5f, 0f), new Vector2(2.5f, 0.5f), new Color(0.5f, 0.38f, 0.58f));
+            CreatePlatform("ClimbWall_Left", new Vector3(14f, 0f, 0f), new Vector2(1f, 12f), new Color(0.26f, 0.24f, 0.36f));
+            CreatePlatform("ClimbWall_Right", new Vector3(16.5f, 0f, 0f), new Vector2(1f, 12f), new Color(0.26f, 0.24f, 0.36f));
+            CreatePlatform("ClimbWall_Top", new Vector3(15.25f, 7f, 0f), new Vector2(3f, 0.5f), new Color(0.52f, 0.36f, 0.56f));
+            CreatePlatform("DownDash_Top", new Vector3(-18f, 6f, 0f), new Vector2(3f, 0.5f), new Color(0.48f, 0.34f, 0.52f));
+            CreatePlatform("DownDash_Bottom", new Vector3(-18f, -1f, 0f), new Vector2(3f, 0.5f), new Color(0.42f, 0.3f, 0.48f));
+            CreatePlatform("DownDash_WallL", new Vector3(-19.5f, 2.5f, 0f), new Vector2(0.5f, 8f), new Color(0.3f, 0.28f, 0.4f));
+            CreatePlatform("DownDash_WallR", new Vector3(-16.5f, 2.5f, 0f), new Vector2(0.5f, 8f), new Color(0.3f, 0.28f, 0.4f));
 
             var player = (GameObject)PrefabUtility.InstantiatePrefab(playerPrefab);
             player.transform.position = new Vector3(-8f, -1.5f, 0f);

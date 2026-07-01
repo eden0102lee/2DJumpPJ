@@ -5,14 +5,17 @@ namespace Hollow.Player
     public class GroundWallSensor : MonoBehaviour
     {
         [SerializeField] private Transform groundCheck;
-        [SerializeField] private Transform wallCheck;
+        [SerializeField] private Transform leftWallCheck;
+        [SerializeField] private Transform rightWallCheck;
         [SerializeField] private Vector2 groundCheckSize = new(0.5f, 0.05f);
         [SerializeField] private Vector2 wallCheckSize = new(0.05f, 0.8f);
         [SerializeField] private float wallCheckOffset = 0.4f;
         [SerializeField] private LayerMask groundLayer;
 
         public bool IsGrounded { get; private set; }
-        public bool IsTouchingWall { get; private set; }
+        public bool IsTouchingLeftWall { get; private set; }
+        public bool IsTouchingRightWall { get; private set; }
+        public bool IsTouchingWall => IsTouchingLeftWall || IsTouchingRightWall;
         public int WallDirection { get; private set; }
         public Vector2 GroundNormal { get; private set; }
 
@@ -26,11 +29,20 @@ namespace Hollow.Player
                 groundCheck = groundObj.transform;
             }
 
-            if (wallCheck == null)
+            if (leftWallCheck == null)
             {
-                var wallObj = new GameObject("WallCheck");
-                wallObj.transform.SetParent(transform);
-                wallCheck = wallObj.transform;
+                var leftObj = new GameObject("LeftWallCheck");
+                leftObj.transform.SetParent(transform);
+                leftObj.transform.localPosition = new Vector3(-wallCheckOffset, 0f, 0f);
+                leftWallCheck = leftObj.transform;
+            }
+
+            if (rightWallCheck == null)
+            {
+                var rightObj = new GameObject("RightWallCheck");
+                rightObj.transform.SetParent(transform);
+                rightObj.transform.localPosition = new Vector3(wallCheckOffset, 0f, 0f);
+                rightWallCheck = rightObj.transform;
             }
         }
 
@@ -49,10 +61,40 @@ namespace Hollow.Player
                 GroundNormal = Vector2.up;
             }
 
-            wallCheck.localPosition = new Vector3(wallCheckOffset * facingDirection, 0f, 0f);
-            var wallPos = wallCheck.position;
-            IsTouchingWall = Physics2D.OverlapBox(wallPos, wallCheckSize, 0f, groundLayer);
-            WallDirection = IsTouchingWall ? facingDirection : 0;
+            IsTouchingLeftWall = Physics2D.OverlapBox(leftWallCheck.position, wallCheckSize, 0f, groundLayer);
+            IsTouchingRightWall = Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0f, groundLayer);
+
+            if (IsTouchingLeftWall && IsTouchingRightWall)
+                WallDirection = facingDirection;
+            else if (IsTouchingLeftWall)
+                WallDirection = -1;
+            else if (IsTouchingRightWall)
+                WallDirection = 1;
+            else
+                WallDirection = 0;
+        }
+
+        public int GetWallDirectionFromInput(float moveInputX)
+        {
+            if (Mathf.Abs(moveInputX) < 0.01f)
+                return 0;
+
+            var inputDir = moveInputX > 0f ? 1 : -1;
+            if (inputDir < 0 && IsTouchingLeftWall)
+                return -1;
+            if (inputDir > 0 && IsTouchingRightWall)
+                return 1;
+
+            return 0;
+        }
+
+        public bool IsTouchingWallInDirection(int direction)
+        {
+            if (direction < 0)
+                return IsTouchingLeftWall;
+            if (direction > 0)
+                return IsTouchingRightWall;
+            return false;
         }
 
         private void OnDrawGizmosSelected()
@@ -63,10 +105,16 @@ namespace Hollow.Player
                 Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
             }
 
-            if (wallCheck != null)
+            if (leftWallCheck != null)
             {
-                Gizmos.color = IsTouchingWall ? Color.cyan : Color.yellow;
-                Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
+                Gizmos.color = IsTouchingLeftWall ? Color.cyan : Color.yellow;
+                Gizmos.DrawWireCube(leftWallCheck.position, wallCheckSize);
+            }
+
+            if (rightWallCheck != null)
+            {
+                Gizmos.color = IsTouchingRightWall ? Color.cyan : Color.yellow;
+                Gizmos.DrawWireCube(rightWallCheck.position, wallCheckSize);
             }
         }
     }

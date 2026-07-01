@@ -17,6 +17,7 @@ namespace Hollow.Player
                 _dashDirection = Hero.Input.MoveInput.x > 0f ? 1 : -1;
 
             Hero.SetFacing(_dashDirection);
+            Hero.StartIFrames();
             Rb.gravityScale = 0f;
             Rb.linearVelocity = new Vector2(Config.dashSpeed * _dashDirection, 0f);
         }
@@ -24,12 +25,18 @@ namespace Hollow.Player
         public override void Exit()
         {
             Rb.gravityScale = Config.gravityScale;
+            var momentum = Config.dashSpeed * _dashDirection * Config.dashEndMomentum;
+            Rb.linearVelocity = new Vector2(momentum, Rb.linearVelocity.y);
             Hero.StartDashCooldown();
         }
 
         public override void Tick()
         {
             _dashTimer -= Time.deltaTime;
+            TryWallSlideTransition();
+
+            if (!IsCurrentState<HeroDashState>())
+                return;
 
             if (_dashTimer <= 0f)
             {
